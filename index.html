@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Respect Token (RES)</title>
+  
+  <!-- FontAwesome for social icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-pV6P9AAZ9RmlDeG18xl16/vjZBz4fXG5l8/pZjqEM1qurTX69HyzKuqN19kW38D4hOGK0+ZFu1cgE4HOzQlPZA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      background: #0e1f2f;
+      font-family: 'Poppins', sans-serif;
+      color: #e0f7fa;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: linear-gradient(90deg, #00bcd4, #0097a7);
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,188,212,0.6);
+      border-bottom-left-radius: 40px;
+      border-bottom-right-radius: 40px;
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 0.5rem;
+      filter: drop-shadow(0 0 3px #00acc1);
+    }
+    header h1 {
+      margin: 0.2rem 0 0.5rem;
+      font-weight: 700;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+      color: #e0f7fa;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #b2ebf2;
+    }
+    main {
+      flex-grow: 1;
+      padding: 2rem 1rem;
+      max-width: 700px;
+      margin: auto;
+      width: 100%;
+    }
+    .card {
+      background: #133c4a;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+      padding: 1.8rem 2rem;
+      margin-bottom: 2rem;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,188,212,0.8);
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #4dd0e1;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #0a2634;
+      font-weight: 500;
+      color: #b2ebf2;
+    }
+    ul li:last-child {
+      border-bottom: none;
+    }
+    a.contract-link {
+      color: #0288d1;
+      font-weight: 600;
+      text-decoration: none;
+      word-break: break-all;
+      transition: color 0.3s ease;
+    }
+    a.contract-link:hover {
+      color: #00bcd4;
+      text-decoration: underline;
+    }
+    .btn-buy {
+      display: inline-block;
+      background: #00acc1;
+      color: white;
+      padding: 0.9rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.1rem;
+      box-shadow: 0 6px 15px rgba(0,172,193,0.7);
+      transition: background 0.3s ease;
+      margin-top: 1rem;
+      margin-right: 1rem;
+    }
+    .btn-buy:hover {
+      background: #0097a7;
+      box-shadow: 0 8px 20px rgba(0,151,167,0.9);
+    }
+    footer {
+      background: #0a1e29;
+      text-align: center;
+      padding: 1rem 1rem;
+      font-size: 0.9rem;
+      color: #6699aa;
+      margin-top: auto;
+    }
+    footer .social-icons {
+      margin-bottom: 0.6rem;
+    }
+    footer .social-icons a {
+      color: #4dd0e1;
+      margin: 0 10px;
+      font-size: 1.4rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    footer .social-icons a:hover {
+      color: #00acc1;
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      main {
+        padding: 1rem;
+      }
+      .card {
+        padding: 1.2rem 1.5rem;
+      }
+      .btn-buy {
+        width: 100%;
+        margin: 0 0 1rem 0;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://i.imgur.com/Khb3F3X.png" alt="Respect Token Logo" />
+  <h1>Respect Token (RES)</h1>
+  <p>Toplam Arz: 2,000,000,000 RES</p>
+</header>
+
+<main>
+  <section class="card">
+    <h2>Proje Hakkında</h2>
+    <p>Respect Token, BNB Chain üzerinde yer alan özgün bir token. Amacımız topluluk odaklı bir proje geliştirmek ve token değerini artırmaktır.</p>
+  </section>
+
+  <section class="card">
+    <h2>Token Bilgileri</h2>
+    <ul>
+      <li><strong>Ad:</strong> Respect</li>
+      <li><strong>Sembol:</strong> RES</li>
+      <li><strong>Toplam Arz:</strong> 2,000,000,000 RES</li>
+      <li><strong>Sözleşme Adresi:</strong> <a href="https://bscscan.com/address/0x91e9327208625831FbCC77eB5673eD7aDAe19dd9" target="_blank" rel="noopener noreferrer" class="contract-link">0x91e9327208625831FbCC77eB5673eD7aDAe19dd9</a></li>
+    </ul>
+    <a href="https://pancakeswap.finance/swap?outputCurrency=0x91e9327208625831FbCC77eB5673eD7aDAe19dd9" target="_blank" class="btn-buy">PancakeSwap'tan Satın Al</a>
+    <a href="https://www.mexc.com/exchange/RES_USDT" target="_blank" class="btn-buy" style="background:#009688; box-shadow: 0 6px 15px rgba(0,150,136,0.7);">MEXC Dex'ten Satın Al</a>
+  </section>
+
+  <section class="card">
+    <h2>Yol Haritası</h2>
+    <ul>
+      <li>Q2 2025 - Token Lansmanı</li>
+      <li>Q3 2025 - Airdrop Kampanyaları</li>
+      <li>Q4 2025 - Resmi Web Sitesi ve Sosyal Medya Büyümesi</li>
+      <li>Q1 2026 - Yeni Ortaklıklar ve Listelenmeler</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Sosyal Medya</h2>
+    <ul>
+      <li><a href="https://twitter.com/EmreTerziii" target="_blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+      <li><a href="https://t.me/respecttokenn" target="_blank"><i class="fab fa-telegram"></i> Telegram</a></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="social-icons">
+    <a href="https://twitter.com/respecttoken" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    <a href="https://t.me/respecttokenn" target="_blank" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+  </div>
+  &copy; 2025 Respect Token. Tüm hakları saklıdır.
+</footer>
+
+</body>
+</html>
